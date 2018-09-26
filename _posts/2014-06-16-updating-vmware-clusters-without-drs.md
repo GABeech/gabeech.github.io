@@ -13,7 +13,8 @@ categories:
   - Powershell
   - VMWare
 ---
-One of the pieces of the vSphere Enterprise license is DRS. Especially the ability to use DRS to one-click upgrade/update a cluster. If you don't know what DRS is, the short version is that it is a product you get with the Enterprise license which allows you to have vSphere move VMs around intelligently. One of the added bonuses you get is the ability to evacuate a VM. When you combine that with vSphere Update Manager you get a one-click and an hour later you're done upgrade of your cluster. 
+One of the pieces of the vSphere Enterprise license is DRS. Especially the ability to use DRS to one-click upgrade/update a cluster. If you don't know what DRS is, the short version is that it is a product you get with the Enterprise license which allows you to have vSphere move VMs around intelligently. One of the added bonuses you get is the ability to evacuate a VM. When you combine that with vSphere Update Manager you get a one-click and an hour later you're done upgrade of your cluster.
+<!--more-->
 Unfortunately, when that is the one feature you would actually use in the Enterprise edition it doesn't make financial sense to pay that premium. The question now is "What do you do to make your life easier than manually moving thing?" The answer is you go and grab [Power CLI](https://www.vmware.com/support/developer/PowerCLI/) and write a script! I've got one started -- Put github link here when done -- and I'll go through some of the details of it here. First, what are the things that it can do?
 
 * Migrate running VMs to the other hosts in the cluster

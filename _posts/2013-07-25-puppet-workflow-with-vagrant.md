@@ -15,7 +15,7 @@ categories:
   - Uncategorized
 ---
 I've spent a good deal of my time working with puppet over the last few years. And like most other things I've spent some time trying to optimize my workflow to avoid the annoying things. Just like anything else developing a good workflow for puppet has taken some time and I'd like to share the workflow that we have come to use over at Stack Exchange that seems to be pretty-darn-good. 
-
+<!--more-->
 Until recently our puppet dev workflow wasn't horrible, however was a bit painful. Normally you would see something like (pg version): 
 
 commit -> wait for CI to pick up commit -> build failed -> damn -> fix typo -> commit -> wait for build -> build failed -> grrr -> fix new error -> commit ... and on and on.

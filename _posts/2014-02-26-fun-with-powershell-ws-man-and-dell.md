@@ -18,7 +18,7 @@ Recently I've been playing with using the WS-MAN protocol to gather information 
 First, what is WS-MAN? It's a management standard developed by the <a href="http://www.dmtf.org/standards/wsman">DTMF</a>. What it really boils down to is giving us the ability to access and manipulate CIM providers via HTTP calls.
 
 One of the interesting things Dell did with their systems in the past two generations (Gen 11 and 12) is to add something they call the Life Cycle controller. They did not really make much information known on what you can do with it, or even how to really use it.
-
+<!--more-->
 Recently I have been exploring what you can do with the Life Cycle Controller. And, quite honestly, you can do a ton of good stuff with it. Everything from getting system information to setting boot options, all the way up to updating all of the firmware on your box. This is all done through the WS-MAN Protocol.
 
 First I would suggest doing some reading so you can get the basic concepts of WS-MAN.

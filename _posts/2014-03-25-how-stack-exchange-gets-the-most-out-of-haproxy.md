@@ -15,7 +15,7 @@ categories:
   - SysAdmin
 ---
 At Stack Exchange we like to two two, well no three things. One, we love living on the bleeding edge and making use of awesome new features in software. Two, we love configuring the hell out of everything we run which leads to three - getting the absolute most performance out of the software that we run. 
-
+<!--more-->
 HAProxy is no exception to this. We have been running HAProxy since just about day one. We have been on the 1.5dev branch of code since almost the day it came out. 
 
 Of course most people would ask why you would do that? You open yourself up to a whole lot of issues with dev code. The answer of course is there are features that we want in this dev code. The less selfish answer is that we want to make the internet a better place for everyone. What better way to do that then running bleeding edge code and finding the issues for you? 

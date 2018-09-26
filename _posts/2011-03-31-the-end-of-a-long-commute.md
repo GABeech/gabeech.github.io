@@ -12,7 +12,7 @@ categories:
   - Life
 ---
 I am nearing the end of my long daily commute from Philadelphia to New York City. The end result hasn't been too bad, although over the past six months the daily hour and a half commute has worn on me at times. My journey started when I took my current position at Stack Exchange as a Systems Administrator in their New York offices. 
-
+<!--more-->
 My first inclination was to move up there ASAP which, looking back would probably have been the better idea even if I was losing sleep over the stress finding a place in NYC in about a week was causing me.  The journey for me began when I accepted the position, I gave my notice at $evil_corporation excited to start in on an adventure at a hot VC funded startup. Of course I started looking for a place, hit up my sister for advice (since she has lived in NYC since she went away to college). I thought I had everything set, spent the week lining up apartments to look at during the week between knowledge dump session. I then intrepidly headed up to NYC for the weekend to look at these places. I had 13 apartments lined up to look at over the course of a weekend. 
 
 I figured I would surely find a place that would work during that time. The first rude awakening that told me the NYC real estate market was nothing like what I was used to was when I woke up Saturday morning to find that 8 of the places where no longer available. Wow.   
