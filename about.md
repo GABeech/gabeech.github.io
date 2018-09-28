@@ -1,18 +1,17 @@
 ---
-layout: page
-title: About
-permalink: /about/
+title: About Me
+date: 2011-02-28T21:44:53+00:00
+author: George Beech
+layout: default
 ---
+# About Me
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Me: George Beech
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## What I do: Systems Engineering/SRE/Coding
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## My Bio
 
+I've been working in IT since I was 17 years old. In that time i've work for a small mom and pop consultancy, a large soul-less multi-national corporation, and now all that hard work has paid off and I'm working for a  kick ass startup in New York city. Over the years I've developed some ideas on how a SysAdmin should work, what those conditions should be and some fierce opinions on technologies. My goal here to to give some of these thoughts and ideas that have been banging around my head a place to be that isn't my head.
 
-[jekyll-organization]: https://github.com/jekyll
+Right now I'm working for Take-Two Games, leading the IT automation team.

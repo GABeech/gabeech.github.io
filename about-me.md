@@ -3,7 +3,7 @@ id: 7
 title: About Me
 date: 2011-02-28T21:44:53+00:00
 author: George Beech
-layout: page
+layout: post
 guid: http://brokenhaze.com/blog/?page_id=7
 ---
 Hi, My name is George and I'm a SysAdmin.
