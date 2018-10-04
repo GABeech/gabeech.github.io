@@ -1,6 +1,7 @@
 ---
 id: 342
 title: Seven years
+comments: true
 date: 2018-02-09T14:22:25+00:00
 author: George Beech
 layout: post
