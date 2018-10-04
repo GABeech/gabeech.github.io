@@ -1,4 +1,0 @@
----
-slug: ramblings
-name: ramblings
----

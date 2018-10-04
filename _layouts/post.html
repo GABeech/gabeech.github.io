@@ -1,19 +1,23 @@
 ---
 layout: default
 ---
-<article class="post">
+<article>
 
-	{% if page.external-url %}
-		<h1>
-			<a href="{{ page.external-url }}">{{ page.title }}</a> 
-			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
-		</h1>
-	{% else %}
-		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-	{% endif %}
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="text-muted">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • {{ page.author }}
+      {%- endif -%}
+    </p>
+  </header>
 
-	<div class="post-content">{{ content }}</div>
-
-	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
+  <section>
+    {{ content }}
+  </section>
 
 </article>

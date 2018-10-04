@@ -1,0 +1,17 @@
+// This is the place to place Bootstrap's variables overrides.
+// As example you can start by importing the _variables.scss file from one of the
+// theme provided by https://bootswatch.com .
+@import "sandstone/_variables.scss";
+@import "fontawesome/fontawesome.scss";
+
+//FontAwesome
+$fa-font-path: "../assets/webfonts";
+
+// Some customization of the container class to have a better display in the guide.
+// Don't hesitate to remove it to have a standard Bootstrap behavior
+$container-max-widths: (
+  sm: 540px,
+  md: 640px,
+  lg: 690px,
+  xl: 720px
+) !default;

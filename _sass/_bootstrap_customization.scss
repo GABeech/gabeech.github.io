@@ -1,0 +1,35 @@
+// This is the place to place Bootstrap-related CSS customizations.
+// As example you can start by importing the _bootswatch.scss file from one of the
+// theme provided by https://bootswatch.com .
+
+@import "sandstone/bootswatch";
+@import "fontawesome/brands.scss";
+@import "fontawesome/regular.scss";
+@import "fontawesome/solid.scss";
+//Social
+.twitter {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
+
+.github {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-github);
+  }
+}
+
+.read-more {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:after {
+    content: fa-content($fa-var-long-arrow-alt-right);
+  }
+}
