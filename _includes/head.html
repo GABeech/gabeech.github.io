@@ -7,4 +7,13 @@
   {%- feed_meta -%}
   <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
   <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  {%- if site.enable_ads -%}
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-5647671020655752",
+      enable_page_level_ads: true
+    });
+  </script>
+  {%- endif -%}
 </head>
