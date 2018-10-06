@@ -7,6 +7,11 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    {%- if site.description -%}   
+      <li class="nav-item">
+        <span class="navbar-text">{{ site.description }}</span>
+      </li>
+    {%- endif -%}
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         {%- for path in page_paths -%}
@@ -17,6 +22,7 @@
           </li>
           {%- endif -%}
         {% endfor -%}
+        
         <li class="nav-item">
           <a class="nav-link" href="https://twitter.com/{{ site.twitter_username }}"><span class="fa-lg twitter"></span></a>
         </li>
