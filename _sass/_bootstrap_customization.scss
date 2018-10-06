@@ -33,3 +33,12 @@
     content: fa-content($fa-var-long-arrow-alt-right);
   }
 }
+
+.rss-feed {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-rss);
+  }
+}
