@@ -19,7 +19,7 @@ I figured I would surely find a place that would work during that time. The firs
 
 The second realization was that Manhattan apartments where ... small, very very small. Although, oddly I was OK with this. I figured if I was going to move to NYC I wanted to be in the center of it all - at least for a year or two - while I'm still young enough to appreciate it.   So, feeling a little bit depressed at not having found a place, and stressed out that I only had one week between my last day at my old job, and my first day at my new job I sat down and decided that it would be best to commute for a little while. I was thinking that this would only last a few months at first but that has transformed into six months at this point!
 
-I have survived the commute now with the help of a few gadgets - and being a geek would you expect anything less?  
+I have survived the commute now with the help of a few gadgets - and being a geek would you expect anything less?
 
 * Laptop with cellular modem
 * iPod

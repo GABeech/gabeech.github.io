@@ -68,7 +68,7 @@ Now, how about adding an attachment. This is done very simply with another MailM
 
 ```powershell
 $Attachment = new-object System.Net.Mail.Attachment("")
-$MailMessage.Attachements.Add($Attachment) 
+$MailMessage.Attachements.Add($Attachment)
 ```
 
 That is all there is to that. There is one last thing we have to do to get this mail off and on it's way. Simply. Send It!

@@ -19,10 +19,10 @@ I've spent a good deal of my time working with puppet over the last few years. A
 Until recently our puppet dev workflow wasn't horrible, however was a bit painful. Normally you would see something like (pg version):
 
 commit -> wait for CI to pick up commit -> build failed -> damn -> fix typo -> commit -> wait for build -> build failed -> grrr -> fix new error -> commit ... and on and on.
-<quote>
-O, that way madness lies; let me shun that;
-No more of that.
--William Shakespeare
+
+> O, that way madness lies; let me shun that;
+> No more of that.
+> -William Shakespeare
 </quote>
 
 Our new way of doing things is much, much saner. Which has in general raised team spirits!
@@ -36,7 +36,7 @@ We have a vagrant file that uses two boxes - one is the client and the other is 
 
 First let's look at the master config. There isn't much special here but I do want to point out few things.
 
-```
+```none
 # Setup the Puppet master
   config.vm.define :master do |master|
     master.vm.box = "centos64-puppetm"
@@ -94,7 +94,7 @@ The two biggest pieces here are lines one and six. Line one adds a hosts entry f
 
 You can expand below to see the full source of our Vagrantfile
 
-```
+```vagrant
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -166,7 +166,7 @@ Vagrant.configure("2") do |config|
       end
     end
   end
- 
+
 end
 ```
 

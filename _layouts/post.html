@@ -4,10 +4,10 @@ layout: default
 <article class="pt-5">
 
   <header>
-  
+ 
     <h1>{{ page.title | escape }}</h1>
     <p class="text-muted">
-      
+     
       <time datetime="{{ page.date | date_to_xmlschema }}">
         {%- assign date_format = "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
@@ -49,7 +49,7 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+                           
   </section>
   {% endif %}
 </article>

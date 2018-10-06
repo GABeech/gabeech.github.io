@@ -21,29 +21,27 @@ HAProxy is no exception to this. We have been running HAProxy since just about d
 
 Of course most people would ask why you would do that? You open yourself up to a whole lot of issues with dev code. The answer of course is there are features that we want in this dev code. The less selfish answer is that we want to make the internet a better place for everyone. What better way to do that then running bleeding edge code and finding the issues for you?
 
-I'm going to go through our HAProxy setup and how we are using the features. I would highly recommended reading through the <a href="http://haproxy.1wt.eu/#docs"> HAProxy documentation</a> for the version you are running. There is a ton of good information in there.
+I'm going to go through our HAProxy setup and how we are using the features. I would highly recommended reading through the [HAProxy documentation](http://haproxy.1wt.eu/#docs) for the version you are running. There is a ton of good information in there.
 
-<a href="http://brokenhaze.com/blog/wp-content/uploads/2014/03/front_end_se.png"><img src="http://brokenhaze.com/blog/wp-content/uploads/2014/03/front_end_se-149x300.png" alt="front_end_se" width="149" height="300" class="alignleft size-medium wp-image-246" style="border: 0; padding-right 2px"/></a>
+[![front_end_se](http://brokenhaze.com/blog/wp-content/uploads/2014/03/front_end_se-149x300.png)](http://brokenhaze.com/blog/wp-content/uploads/2014/03/front_end_se.png)
 
-<a href="http://brokenhaze.com/blog/wp-content/uploads/2014/03/HAProxy-Flow-ERD.png"><img src="http://brokenhaze.com/blog/wp-content/uploads/2014/03/HAProxy-Flow-ERD-232x300.png" alt="HAProxy Flow - ERD" width="232" height="300" class="alignleft size-medium wp-image-254" style="border: 0; padding-left 2px"/></a>
+[![HAProxy Flow - ERD](http://brokenhaze.com/blog/wp-content/uploads/2014/03/HAProxy-Flow-ERD-232x300.png)](http://brokenhaze.com/blog/wp-content/uploads/2014/03/HAProxy-Flow-ERD.png)
 
 This is a high level overview of what our network looks like from the cloud to the web front ends. Yes, there is a lot more to us serving you a request, but this is enough for this post.
 
-The basics are that a request comes into our network from the internet. Once it passes our edge routers it goes on to our load balencers. These are CentOS 6 linux boxes running HAProxy 1.5dev. The request comes into our HAProxy load balencers and then depending on what tier that they come into are processed and sent to a backend. After the packet makes it's way through HAProxy it gets routed to one of the web servers in our IIS farm. 
+The basics are that a request comes into our network from the internet. Once it passes our edge routers it goes on to our load balencers. These are CentOS 6 linux boxes running HAProxy 1.5dev. The request comes into our HAProxy load balencers and then depending on what tier that they come into are processed and sent to a backend. After the packet makes it's way through HAProxy it gets routed to one of the web servers in our IIS farm.
 
-One of the reasons that HAProxy is so damn good at what it does is that is it single minded, as well as (mostly) single threaded. This has lead it to scale very very well for us. One of the nice things about the software being single threaded is that we can buy a decent sized multi-core server and as things need more resources we just split them out to their own tier which is another HAProxy instance, using a different core. 
+One of the reasons that HAProxy is so damn good at what it does is that is it single minded, as well as (mostly) single threaded. This has lead it to scale very very well for us. One of the nice things about the software being single threaded is that we can buy a decent sized multi-core server and as things need more resources we just split them out to their own tier which is another HAProxy instance, using a different core.
 
-Things get a bit more interesting with SSL as there is a multi-threaded bit to that to be able to handle the transaction overhead there. Going deeper into the how of the threading of HAProxy is out of the scope of this post though, so I'll just leave it at that. 
-
-
+Things get a bit more interesting with SSL as there is a multi-threaded bit to that to be able to handle the transaction overhead there. Going deeper into the how of the threading of HAProxy is out of the scope of this post though, so I'll just leave it at that.
 
 Phew, we've got the introductory stuff out of the way now. Let's dive into what our HAProxy config actually looks like!
 
-The first bit is our global defaults, and some setup - users, a bit of tuning, and some other odds and ends. All of these options are very well documented in the HAProxy docs, so I won't bore you by explaining what each one of them do. 
+The first bit is our global defaults, and some setup - users, a bit of tuning, and some other odds and ends. All of these options are very well documented in the HAProxy docs, so I won't bore you by explaining what each one of them do.
 
-For this post all but one example (our websocket config) comes out of what we call "Tier 1" this is our main tier, it's where we server the Q&A sites and other critical services out of. 
+For this post all but one example (our websocket config) comes out of what we call "Tier 1" this is our main tier, it's where we server the Q&A sites and other critical services out of.
 
-[code autolink="false"]
+```haproxy
 userlist stats-auth
     group admin users &lt;redacted&gt;
     user supa_dupa_admin insecure-password &lt;redacted&gt;
@@ -76,15 +74,15 @@ defaults
     option redispatch
     option dontlognull
     balance source
-[/code]
+```
 
-Nothing all that crazy here, some tweaks for scale, setting up some users, timeouts, logging options and default balance mode. Generally you want to tune the <pre>maxconn</pre> and your timeout values size to your environment and your application. Other than that the defaults should work for 98% of the people out there. 
+Nothing all that crazy here, some tweaks for scale, setting up some users, timeouts, logging options and default balance mode. Generally you want to tune the `maxconn` and your timeout values size to your environment and your application. Other than that the defaults should work for 98% of the people out there.
 
-Now that we have our defaults setup, lets look a little deeper into the really interesting parts of our configuration. I will point out things that we use that are only available in 1.5dev as I go. 
+Now that we have our defaults setup, lets look a little deeper into the really interesting parts of our configuration. I will point out things that we use that are only available in 1.5dev as I go.
 
-First, our SSL termination. We used to use Nginx for our SSL termination but as we grew our deployment of SSL. We knew that SSL support was coming to HAProxy, so we waited for it to come out then went in whole hog. 
+First, our SSL termination. We used to use Nginx for our SSL termination but as we grew our deployment of SSL. We knew that SSL support was coming to HAProxy, so we waited for it to come out then went in whole hog.
 
-[code]
+```haproxy
 listen ssl-proxy-1
     bind-process 2 3 4
     bind 198.51.100.1:443 ssl crt /etc/haproxy-shared/ssl/wc-san.pem
@@ -105,7 +103,7 @@ listen ssl-proxy-1
     server http 127.1.1.5:80 send-proxy
 
     maxconn 100000
-[/code]
+```
 
 **This is a 1.5dev feature.**
 
@@ -119,13 +117,12 @@ The next thing it does is set the target server to itself (127.0.0.1,2,3 etc) us
 
 What happened when we started using SSL? Well we started proxying a large amount of traffic via 127.0.0.1. I mean we do have a feeewww more than 65k connections.
 
-```
+```bash
 Total: 581558 (kernel 581926)
 TCP:   677359 (estab 573996, closed 95478, orphaned 1237, synrecv 0, timewait 95475/0), ports 35043
 ```
 
 So the solution here is to simply load balance between a bunch of ip's in the 127.0.0.0/8 space. Giving us ~65k more source ports per entry.
-
 
 The final thing I want to point out about the SSL front end is that we use the `bind-process` directive to limit the cores that that particular front end is allowed to use. This allows us to have multiple HAProxy instances running and not have them stomp all over eachother in a multi-core machine.
 
@@ -134,7 +131,7 @@ Our HTTP Fronend
 
 The real meat of our setup is our http frontend. I will go through this piece by piece and at the end of this section you can see the whole thing if you would like.
 
-```
+```haproxy
 frontend http-in
     bind 198.51.100.1:80 name stackexchange
     bind 198.51.100.2:80 name careers
@@ -156,7 +153,7 @@ frontend http-in
 
 Once again, this is just setting up our listeners, nothing all that special or interesting here. Here is where you will find the binding that our SSL front end sends to with the `accept-proxy` directive. Additionally, we give them a name so that they are easier to find in our monitoring solution.
 
-```
+```haproxy
 stick-table type ip size 1000k expire $expire_time store gpc0,conn_rate($some_connection_rate)
 
 ## Example from HAProxy Documentation (not in our actual config)##
@@ -168,9 +165,8 @@ stick-table type ip size 1m expire 5m store gpc0,conn_rate(30s)
 
 The first interesting piece is the `stick-table` line. What is going on here is we are capturing connection rate for the incoming IPs to this frontend and storing them into gpc0 (General Purpose Counter 0). The example from the HAProxy docs on [stick-tables](http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#4-stick-table) explains this pretty well.
 
-```
+```haproxy
     log global
-    
 
     capture request header Referer               len 64
     capture request header User-Agent            len 128
@@ -200,7 +196,7 @@ We are mostly doing some setup for logging here. What is happening, is that as a
 
 The next thing that we do is to setup some ACLs. I'll just show a few examples here since we have quite a few.
 
-```
+```haproxy
 acl source_is_serious_abuse src_conn_rate(http-in) gt $some_number
 acl api_only_ips src -f /etc/haproxy-shared/api-only-ips
 acl is_internal_api path_beg /api/
@@ -214,7 +210,7 @@ The next few acl's are just examples of different ways that you can setup acl's 
 
 Now that we have those acl's setup, what exactaly do we use them for?
 
-```
+```haproxy
     tcp-request connection reject if source_is_serious_abuse !source_is_google !rate_limit_whitelist
     use_backend be_go-away if source_is_abuser !source_is_google !rate_limit_whitelist
 ```
@@ -223,7 +219,7 @@ The first thing we do is deal with those connections that make it onto our abuse
 
 The next thing we do is some request routing. We send different requests to different server backends.
 
-```
+```haproxy
     use_backend be_so_crawler if is_so is_crawler
     use_backend be_so_crawler if is_so is_crawler_ua
     use_backend be_so if is_so
@@ -242,7 +238,7 @@ Phew! That's a lot of information so far. We really do have a lot configured in 
 
 Well they are pretty simple beasts. Most of the work is done on the front end.
 
-```
+```haproxy
 backend be_others
     mode http
     bind-process 1
