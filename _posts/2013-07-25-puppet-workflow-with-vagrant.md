@@ -23,12 +23,10 @@ commit -> wait for CI to pick up commit -> build failed -> damn -> fix typo -> c
 > O, that way madness lies; let me shun that;
 > No more of that.
 > -William Shakespeare
-</quote>
 
 Our new way of doing things is much, much saner. Which has in general raised team spirits!
 
-The Dev Tier
-------------
+### The Dev Tier
 
 We currently use Vagrant to do local dev work on new modules, and changes production modules. I have to say once it clicked that I can use Vagrant for puppet it was like that first sip of rocket fueled coffee in the morning. Everything suddenly became clear.
 
@@ -174,8 +172,7 @@ So, what exactly does doing a dev setup like this help you with? It keeps you fr
 
 [![puppet-madnexx](http://brokenhaze.com/blog/wp-content/uploads/2013/07/puppet-madnexx-1024x486.png)](http://brokenhaze.com/blog/wp-content/uploads/2013/07/puppet-madnexx.png)
 
-Test and Prod
--------------
+### Test and Prod
 
 I'm going to talk about the test and prod environments together here. The only functional difference between the two is the puppet module code that is run in those environments so for the purposes of this exercise they are the same.
 

@@ -126,8 +126,7 @@ So the solution here is to simply load balance between a bunch of ip's in the 12
 
 The final thing I want to point out about the SSL front end is that we use the `bind-process` directive to limit the cores that that particular front end is allowed to use. This allows us to have multiple HAProxy instances running and not have them stomp all over eachother in a multi-core machine.
 
-Our HTTP Fronend
-----------------
+### Our HTTP Fronend
 
 The real meat of our setup is our http frontend. I will go through this piece by piece and at the end of this section you can see the whole thing if you would like.
 
@@ -231,8 +230,7 @@ The next thing we do is some request routing. We send different requests to diff
 
 What this is doing is matching against ACLs that where setup above, and sending you to the correct backend. If you don't match any of the ACLs you get sent to our default backend.
 
-An Example Backend
-------------------
+### An Example Backend
 
 Phew! That's a lot of information so far. We really do have a lot configured in our HAProxy instances. Now that we have our defaults, general options, and front ends configured what does one of our backends look like?
 
@@ -274,8 +272,7 @@ There really isn't too much to our back ends. We setup some administrative auth 
 
 In this instance we are just checking '/' but a lot of our back ends have a '/ping' route that gives more information about how the app is performing for our out monitoring solutions. To check those routes we simply change 'HEAD /' to 'HEAD /ping'
 
-Final Words
------------
+### Final Words
 
 Man, that we sure a lot of information to write, and process. But using this setup has giving us a very stable, scalable and flexible load balancing solution. We are quite happy with the way that this is all setup, and has been running smoothly for us.
 
