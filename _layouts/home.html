@@ -33,7 +33,9 @@ layout: default
           <button class="btn btn-link">
             <a href="{{ post.url | relative_url }}" class="read-more">Read More  </a>
           </button>
+          {%- if forloop.last == false -%}
           <hr />
+          {%- endif -%}
         {%- endif -%}
       </li>
       {%- endfor -%}

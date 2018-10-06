@@ -1,6 +1,6 @@
 ---
 id: 48
-title: 'SysAdminTools &#8211; Making Our Lives Easier'
+title: 'SysAdminTools - Making Our Lives Easier'
 date: 2011-07-29T13:01:02+00:00
 author: George Beech
 layout: post

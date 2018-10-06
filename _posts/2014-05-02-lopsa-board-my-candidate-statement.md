@@ -1,6 +1,6 @@
 ---
 id: 281
-title: 'LOPSA Board &#8211; My Candidate Statement'
+title: 'LOPSA Board - My Candidate Statement'
 date: 2014-05-02T19:38:17+00:00
 author: George Beech
 layout: post
