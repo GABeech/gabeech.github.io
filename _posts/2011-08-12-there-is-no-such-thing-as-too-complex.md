@@ -16,11 +16,11 @@ This is a crazy idea, but it's true there really is no such thing as too complex
 <!--more-->
 You still don't believe me do you? Fine. Lets take a look at a very simple operation. We are going to monitor a single box via SNMP. We are going to assume that you already have a central monitoring box already setup.
 
-1.  You configure your box-to-be-monitored with SNMP, configuring the proper access controls
-2.  You add any extra scripts that you need to call via SNMP
-3.  You open the firewall on the box to allow SNMP traffic
-4.  You configure your monitoring server to query the box-to-b-monitored via SNMP
-5.  You check the results
+1. You configure your box-to-be-monitored with SNMP, configuring the proper access controls
+2. You add any extra scripts that you need to call via SNMP
+3. You open the firewall on the box to allow SNMP traffic
+4. You configure your monitoring server to query the box-to-b-monitored via SNMP
+5. You check the results
 
 And, THAT is the simplified version of events. In reality there is a lot more that goes into just the simple process of monitoring ONE machine. That really is complex, and it's not a bad thing.
 

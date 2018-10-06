@@ -16,6 +16,7 @@ A little about me
 
 Hi, I'm George and I'm running for one of the open seats on the [LOPSA Board](https://lopsa.org/board). I've been involved in LOPSA for about four years now. I've been involved with the NYC local since it started, and have been part of the LOPSA-EAST (Formally PICC) committee for the past three years. I've been working as a System Administrator for the last 14 years. Currently I'm an SRE at [Stack Exchange](http://stackexchange.com). I believe that this organization has a lot of promise to be a leader in the field of system administration and would like to be part of those that have been entrusted by the membership to guide the organization to that position.
 <!--more-->
+
 Ideas for Change
 ================
 
@@ -24,19 +25,19 @@ I think you would agree with me that LOPSA as an organization needs to evolve, a
 How **do** we grow
 ------------------
 
-### 1\. Keep working on locals
+### Keep working on locals
 
 I'm not going to spend much time on this, but obviously we need to continue the work on growing, and starting new local groups. Everyone says this every year, and I think we do a pretty good job of starting new locals and growing the ones we already have.
 
-### 2\. Online membership
+### Online membership
 
 Personally I think by not having some sort of "Online Local" we are leaving a lot on the table by not having some sort of viable online membership. As of 2012 the US Bureau of Labor Statistics says that there are [366,400](http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm) people what are classified as Network and Computer Systems Administrators. They are not all in the 15 localities that we have locals. We need to setup a good online community that all members can access, but it should be geared towards trying to replicate some of the experience of a physical local.
 
-*   Simulate the talks
-    *   Monthly Articles
-    *   Monthly Video Presentation
-    *   Dedicated talk area - forum, possibly comments section - for the above items
-*   A way to emulate the before and after hang out sessions
+* Simulate the talks
+  * Monthly Articles
+  * Monthly Video Presentation
+  * Dedicated talk area - forum, possibly comments section - for the above items
+* A way to emulate the before and after hang out sessions
 
 How do we become more vocal
 ---------------------------

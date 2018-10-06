@@ -29,7 +29,7 @@ Next, what still needs to be added?
 
 The most interesting function here is the `evac-host` function. This is actually the meat and bones of this script.
 
-[code autolink="false" lang="powershell"]
+```powershell
 function evac-host()
 {
     Param(
@@ -53,7 +53,7 @@ function evac-host()
     }
 
     $svr = 0
-    $vms = get-vm -Location $vHost | where {$_.PowerState -ne &quot;PoweredOff&quot;}
+    $vms = get-vm -Location $vHost | where {$_.PowerState -ne "PoweredOff"}
     $m_loc = @{}
 
     if ($vms.Count -gt 0)
@@ -81,9 +81,9 @@ function evac-host()
     }
     else
     {
-        write-host &quot;No Powered on VMs on the Host&quot;
+        write-host "No Powered on VMs on the Host";
     }
 }
-[/code]
+```
 
 The 10,000 foot view is that this function takes a Cluster Name (wild cards are acceptable), and a ESX host name as arguments. Then it goes through and moves every vm off the host. As it does this, it writes the names and locations they got sent to to a Hashtable, then writes those results out to a csv just in case. It also returns the hashtable so we can work with it later, avoiding having to read the csv back in.

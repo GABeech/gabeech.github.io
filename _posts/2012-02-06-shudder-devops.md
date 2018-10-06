@@ -22,10 +22,10 @@ The first, and I think biggest problem I have with the term DevOps is simply thi
 
 In my opinion every sysadmin should at a minimum say yes to all of these things:
 
-*   You should be able to script in at least two languages
-*   You should have a passable command of one compiled language
-*   You should be able to look at a piece of code in any language and have an understanding of basically what is going on
-*   Why? So you can talk with your devs, that's why
+* You should be able to script in at least two languages
+* You should have a passable command of one compiled language
+* You should be able to look at a piece of code in any language and have an understanding of basically what is going on
+* Why? So you can talk with your devs, that's why
 
 There are many people that will wave their hands, and shout "But, But that's not what DevOps is about - DevOps is about bringing your Developers and SysAdmins closer and getting them to work together for a common good." Ok, that's a fair point and brings me to the second problem I have with DevOps. That problem is that the real word you are looking for is **TEAMWORK**. You shouldn't need to coin a new term that says the IT department should work together - that should already be the goal.
 

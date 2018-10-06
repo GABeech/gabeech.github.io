@@ -13,9 +13,10 @@ categories:
 ---
 **Note: This is copied (thank you wayback machine) from a previous incarnation of my blog. I was very sad when I realized this post was gone, then very happy when wayback machine had it** A little while ago i spent a lot of time trying to figure out how to send an email that fulfilled the following requirements: Multiple Recipients Attached File Meaningful Subject Sent without an external executable Thanks to powershell's ability to access .Net libraries, this is a fairly simple, however not quite so well explained - at least that i could find - process. Let us start simply, with the basic SMTPClient Object, and setting the Server Variables, settings, etc. The most basic way to configure your server is to simple create a.Net System.Net.Mail.smtpClient object, and set the email server hostname, taking the defaults.
 <!--more-->
+
 ```powershell
 $SMTPClient = new-object System.Net.Mail.smtpClient
-$SMTPClient.host = "" 
+$SMTPClient.host = ""
 ```
 
 Simple, right? Then lets get a little bit more complicated. Lets send an email to a host that requires authentication. To do this, we are going to need another .Net object: The NetworkCredential Object from there we can set the domain, user, and password, set these values on our SMTPClient.
@@ -25,7 +26,7 @@ $Credentials = new-object System.Net.networkCredential
 $Credentials.domain = ""
 $Credentials.UserName = ""
 $Credentials.Password = ""
-$SMTPClient.Credentials = $Credentials 
+$SMTPClient.Credentials = $Credentials
 ```
 
 The above code is fairly self explainitory, if you were to display $SMTPClient (Just type $SMTPClient on the console) before and after when you set the Credentials property you can see that is has been set. There are a few other options that you can set on the SMTPClient object, including Port, and SSL to see all that you can do issue
