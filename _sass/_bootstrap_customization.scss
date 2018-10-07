@@ -42,3 +42,13 @@
     content: fa-content($fa-var-rss);
   }
 }
+
+.hide-small {
+  display: none;
+}
+
+@include media-breakpoint-up(md) {
+  .hide-small {
+    display: block;
+  }
+}
