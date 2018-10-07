@@ -9,7 +9,6 @@ permalink: /2012/02/14/where-are-all-the-sysadmins/
 dsq_thread_id:
   - "2642388292"
 categories:
-  - SysAdmin
   - Thoughts and Rants
 ---
 I had a great - albeit brief - conversation with Matt Simmons while he was in town on his [world tour in NYC](http://www.standalone-sysadmin.com/blog/2012/01/manhattan-world-tour-1-night-only-wednesday-212012/ "world tour") recently that got me thinking about bringing the SysAdmin community together.

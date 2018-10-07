@@ -9,7 +9,7 @@ permalink: /2011/02/28/and-we-are-back/
 dsq_thread_id:
   - "2528341755"
 categories:
-  - Random Ramblings
+  - Misc
 tags: [ramblings]
 ---
 After about a year off from writing on a personal blog, i've decided that I should really do this things again - for reals this time.  Being inspired by the writing I'm doing for my job, and the fact I'm actually missing doing this - along with about 30,000 things i've been thinking about and keep saying "I need to write this down somewhere." I've finally decided to jump back into the fray.

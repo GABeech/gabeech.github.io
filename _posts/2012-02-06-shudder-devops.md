@@ -9,7 +9,6 @@ permalink: /2012/02/06/shudder-devops/
 dsq_thread_id:
   - "2642579661"
 categories:
-  - SysAdmin
   - Thoughts and Rants
 ---
 I think the first time I heard the term DevOps I didn't think all that much about it, in fact I vaguely remember thinking "oh great another group of developers that think they don't need sysadmins and they can just code themselves out of any systems problem." Of course, at the time I was working in a soul crushing job, with incompetent programmers who thought their job was to push out code and as long as it ran on their laptop everything was just fine. So, I may have had a slightly ... jaded view of things. At that point I just put my head back down and got back to work.

@@ -9,10 +9,7 @@ permalink: /2014/03/25/how-stack-exchange-gets-the-most-out-of-haproxy/
 dsq_thread_id:
   - "2516882669"
 categories:
-  - haproxy
   - infrastructure
-  - stack exchange
-  - SysAdmin
 comments: true
 ---
 At Stack Exchange we like to two two, well no three things. One, we love living on the bleeding edge and making use of awesome new features in software. Two, we love configuring the hell out of everything we run which leads to three - getting the absolute most performance out of the software that we run.

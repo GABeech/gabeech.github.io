@@ -7,6 +7,6 @@ layout: post
 guid: http://brokenhaze.com/blog/?p=201
 permalink: /?p=201
 categories:
-  - Uncategorized
+  - draft
 ---
 <p>Every now and then - about three times a year - I run into a situation where I wish I had a real lab to play with. A place that would allow me to test upgrades, do stress tests, and test new configurations to name a few uses.</p>

@@ -7,7 +7,7 @@ layout: post
 guid: http://brokenhaze.com/blog/?p=40
 permalink: /?p=40
 categories:
-  - Uncategorized
+  - draft
 ---
 Ever since I started working at Stack Exchange, I've been thinking about the topic of community more and more. Well, that's not quite true I've thought off and on over probably my whole career. When I was a young baby sysadmin I really wanted the ability to find a place to go and hang out, learn from the wiser more seasoned sysadmins. As I grew into my powers I would have loved to have a community I could talk thing over with, mull problems, meet up and go out for a beer. Now, I know some of you are going to say "IRC! FTW" which, is a semi-valid answer. The problem with IRC -as I see it - is that it is not really a group of sysadmins, it's a group of specific sysadmins (I'll go more into this later).
 

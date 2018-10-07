@@ -10,7 +10,6 @@ dsq_thread_id:
   - "3437554385"
 categories:
   - Life
-  - Random Ramblings
 ---
 Excuse me for a bit while I get a little sentimental. Tomorrow (the 27th of September) marks my two year anniversary with Stack Exchange - it was still called Stack Overflow Internet Services when I joined! I realized this about two or three weeks ago when I was setting up my trip to Denver for the [Opening Party](http://blog.stackoverflow.com/2012/09/join-us-for-our-opening-reception-of-stack-exchange-denver/). It just amazes me how quickly time flies when you are having fun.
 <!--more-->

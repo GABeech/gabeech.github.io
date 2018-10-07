@@ -10,10 +10,7 @@ permalink: /2016/02/10/change-control-using-gitlab/
 dsq_thread_id:
   - "4568103913"
 categories:
-  - DevOps
   - infrastructure
-  - stack exchange
-  - SysAdmin
   - Teamwork
 ---
 

@@ -9,7 +9,6 @@ permalink: /2011/08/12/there-is-no-such-thing-as-too-complex/
 dsq_thread_id:
   - "2533291038"
 categories:
-  - SysAdmin
   - Thoughts and Rants
 ---
 This is a crazy idea, but it's true there really is no such thing as too complex in an IT environment. If you take a moment to think about it, everything we do is incredibly complex. Really, just take a moment to think about it. There is not one thing that you do as a Systems Administrator that isn't complex.

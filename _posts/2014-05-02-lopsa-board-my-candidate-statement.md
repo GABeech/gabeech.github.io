@@ -9,7 +9,7 @@ permalink: /2014/05/02/lopsa-board-my-candidate-statement/
 dsq_thread_id:
   - "2656128240"
 categories:
-  - Uncategorized
+  - Misc
 ---
 ## A little about me
 

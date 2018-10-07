@@ -10,7 +10,6 @@ dsq_thread_id:
   - "2776006474"
 categories:
   - Open Source
-  - SysAdmin
   - Tools
 ---
 First, it is SysAdmin Day! So happy sysadmin day to all of those hardworking sysadmins out there. I've had a project that I wanted to get off the ground for a while now. In fact, I think of it every time I move jobs, or start working on a project and think "wow this could be really useful to the other sysadmins out there."

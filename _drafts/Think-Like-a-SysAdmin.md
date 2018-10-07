@@ -7,7 +7,7 @@ layout: post
 guid: http://brokenhaze.com/blog/?p=114
 permalink: /?p=114
 categories:
-  - Uncategorized
+  - draft
 ---
 <p>Many people hold the idea that all Systems Administrators are BOFH's. That is, arrogant, anti-social blow-hards that don't ever want to help you and seem to take joy in your pain. There are some out there that give us a bad name, but for the most part Systems Administrators are great people. I think that a lot of these misconceptions that people have in their heads about the general attitude of a sysadmin is due to an imperfect understanding of our job, and what really goes into what we do.</p>
 

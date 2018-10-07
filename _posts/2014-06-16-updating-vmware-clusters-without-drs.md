@@ -9,9 +9,7 @@ permalink: /2014/06/16/updating-vmware-clusters-without-drs/
 dsq_thread_id:
   - "2770130301"
 categories:
-  - DevOps
   - Powershell
-  - VMWare
 ---
 One of the pieces of the vSphere Enterprise license is DRS. Especially the ability to use DRS to one-click upgrade/update a cluster. If you don't know what DRS is, the short version is that it is a product you get with the Enterprise license which allows you to have vSphere move VMs around intelligently. One of the added bonuses you get is the ability to evacuate a VM. When you combine that with vSphere Update Manager you get a one-click and an hour later you're done upgrade of your cluster.
 <!--more-->

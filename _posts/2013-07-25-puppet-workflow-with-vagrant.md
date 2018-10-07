@@ -10,9 +10,7 @@ dsq_thread_id:
   - "3437554303"
 categories:
   - puppet
-  - SysAdmin
   - Tools
-  - Uncategorized
 ---
 I've spent a good deal of my time working with puppet over the last few years. And like most other things I've spent some time trying to optimize my workflow to avoid the annoying things. Just like anything else developing a good workflow for puppet has taken some time and I'd like to share the workflow that we have come to use over at Stack Exchange that seems to be pretty-darn-good.
 <!--more-->

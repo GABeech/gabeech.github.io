@@ -9,9 +9,7 @@ permalink: /2014/02/26/fun-with-powershell-ws-man-and-dell/
 dsq_thread_id:
   - "2824534198"
 categories:
-  - DevOps
   - Powershell
-  - SysAdmin
 ---
 Recently I've been playing with using the WS-MAN protocol to gather information (and eventually run updates) on our Dell servers. It has actually been a fairly insteresting project after I got through the pretty high learning curve to get started using WS-MAN.
 

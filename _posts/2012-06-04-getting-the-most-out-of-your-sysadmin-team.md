@@ -9,7 +9,6 @@ permalink: /2012/06/04/getting-the-most-out-of-your-sysadmin-team/
 dsq_thread_id:
   - "3200365421"
 categories:
-  - SysAdmin
   - Teamwork
   - Thoughts and Rants
 ---
