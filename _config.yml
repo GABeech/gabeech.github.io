@@ -29,6 +29,8 @@ show_excerpts: true
 excerpt_separator: "<!--more-->"
 
 # Build settings
+permalink: /:year/:month/:day/:title:output_ext
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
