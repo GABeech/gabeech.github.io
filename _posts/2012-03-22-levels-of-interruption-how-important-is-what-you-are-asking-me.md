@@ -15,8 +15,8 @@ Communication is an important thing in any team environment, and part of communi
 
 Generally we get interrupted multiple times a day via our various means of communication. Generally we are available via: Phone (both land line and cell), IM, Group Chat (IRC/MSN/Skype/etc or some web based chat system), and email. We will get incomming messages via all of these mediums in a day, and need to prioritize, respond (or ignore) and action each one of these requests. Each different way of getting in touch with me brings along an implicit level of importance as well as a speed of action type identifier.
 <!--more-->
-## Phone (and text messaging)
 
+## Phone (and text messaging)
 
 What do I think when you call me - or conversely I call you? To me it means that whatever you are calling me about is something that needs immediate action, generally it's a show stopping problem, or a request for information that is blocking you from working on your assigned task at this time. Phones are the most immediate means of communication, and necessitate that I immediately switch to working on whatever the call is about. Now, if you abuse the phone I will stop picking up for you, and make you leave me a message - or tell you to put in a help desk ticket. You should only be calling me with critical things, that need attention _right now_.
 
