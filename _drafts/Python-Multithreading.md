@@ -180,3 +180,7 @@ There is a really, really hard to find part of the multiprocessing library calld
 And with one small trick we can even do this with only chaning one line of code!
 
 We just need to change our import a little. From `from multiprocessing import Pool` to `from multiprocessing import ThreadPool as Pool` bam. Massive speed increase with not a whole lot of effort.
+
+## Conclusion
+
+Overall once I was able to get my head around all of the options, and the pythonic way to do multithreading it ended up working really well. There was a bit of a steep learning curve, but from what I was reading python wasn't really designed for multiprocess/multithreaded operations. Would I use python in the future for something like this? Probably for one-off type scripts. I would probably use another language that I was able to do multithreading a bit easier with if I was working on something that would be used more than a few times.
