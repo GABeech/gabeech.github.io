@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # A useful script to download the latest version of bootstrap and jquery
 
