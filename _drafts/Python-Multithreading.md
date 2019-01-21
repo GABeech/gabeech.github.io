@@ -10,7 +10,7 @@ comments: false
 ---
 
 I recently spent some time working with Python to get some data transfered from an older ticketing system to a newer one. It was you basic pull data down, do a bit of transformation and then push data up to the new system. Not a very complicated piece of code, mostly just dealing with understanding the two different REST APIs, and making requests.
-
+<!--more-->
 After I got the initial code written and did a test run against a queue with about 80 tickets that needed to be migrated over - which took around 30 minutes - I figured that was probably good. After all, this was a piece of code that would only run a few times and then the old system would be shut down. My next run was a test run against a queue that needed 2000 tickets imported. That one, well that one took 10 hours. While once again that would probably be ok. Script a loop and let the import run over a weekend to get all the queues done.
 
 And then my coworker said "oh it'll take that long that's kind of slow." Challenge. Accepted.
