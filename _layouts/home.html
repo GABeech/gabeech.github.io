@@ -30,9 +30,11 @@ layout: default
        
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
-          <button class="btn btn-link">
-            <a href="{{ post.url | relative_url }}" class="read-more">Read More  </a>
+          <a href="{{ post.url | relative_url }}">
+          <button class="btn btn-link read-more">
+            Read More  
           </button>
+          </a>
           {%- if forloop.last == false -%}
           <hr />
           {%- endif -%}
