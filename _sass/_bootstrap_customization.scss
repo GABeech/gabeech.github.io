@@ -25,6 +25,16 @@
   }
 }
 
+.tweet-this {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter-square);
+    padding-right: 2px;
+  }
+}
+
 .read-more {
   @extend %fa-icon;
   @extend .fas;
