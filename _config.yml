@@ -23,7 +23,7 @@ description: "Tech, Life, and everything else"
 twitter_username: GABeech
 github_username:  GABeech
 
-enable_ads: true
+enable_ads: false
 
 show_excerpts: true
 excerpt_separator: "<!--more-->"
