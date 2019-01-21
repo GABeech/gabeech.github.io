@@ -1,6 +1,17 @@
 
+    {%- if page.id -%} 
+    <H5 class="pl-0 ml-0">Share</H5>
+    <ul class="list-unstyled">
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://brokenhaze.com{{ page.url }}&via=GABeech">
+          <span class="tweet-this">Twitter</span>
+        </a>
+      </li>
+    </ul>
+    {%- endif -%}
     <H5 class="pl-0 ml-0">Categories</H5>
     <ul class="list-unstyled">
     {%- for cat in site.categories -%}
       <li class="py-0 my-0"> <small><span class="text-muted">({{cat[1].size}})</span> {{ cat[0] }}</small> </li>
     {%- endfor -%}
+    </ul>
