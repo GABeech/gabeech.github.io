@@ -22,7 +22,27 @@ layout: default
       {%- endif -%}
     </p>
   </header>
+  
+  
+{% if page.series_name %}
+{% assign series_collection =  site.posts | where:"series_name", page.series_name | sort: "series_post_number" -%}
+{{post.title}}
+{{post.collection}}
+<div class="card">
 
+<section id="series_info">
+<div class="card-body  series-header">
+  <h5 class="cart-title">This post is part of the <b>{{page.series_name }}</b> series</h5>
+  <p class="card-text">
+  {%- for s_post in series_collection -%}
+    {{page.series_post_number}}. {{page.title}}
+  {% endfor %}
+  </p>
+  </div>
+</section>
+
+</div>
+{%- endif -%}
   <section>
     {{ content }}
   </section>
