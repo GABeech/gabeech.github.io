@@ -24,7 +24,7 @@ twitter_username: GABeech
 github_username:  GABeech
 repository: GABeech/gabeech.github.io
 enable_ads: false
-
+github: [metadata]
 show_excerpts: true
 excerpt_separator: "<!--more-->"
 
