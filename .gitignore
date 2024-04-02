@@ -10,7 +10,6 @@ Thumbs.db
 /_site/
 /.jekyll-cache/
 Gemfile.lock
-package-lock.json
 yarn.lock
 .idea
 brokenahzecom-2018-10-06T02_09_47.683189-links.csv
