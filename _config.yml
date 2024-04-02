@@ -22,7 +22,7 @@ description: "Tech, Life, and everything else"
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: GABeech
 github_username:  GABeech
-
+repository: GABeech/gabeech.github.io
 enable_ads: false
 
 show_excerpts: true
