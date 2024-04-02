@@ -30,11 +30,10 @@ excerpt_separator: "<!--more-->"
 
 # Build settings
 permalink: /:year/:month/:day/:title:output_ext
-github: [metadata] 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
+  - github-metadata
 # A list of the pages to display in the navigation bar
 header_pages:
   - about.md
