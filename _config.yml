@@ -50,3 +50,4 @@ exclude:
   - node_modules
   - update_boostrap.sh
   - vendor
+  - .devcontainer
