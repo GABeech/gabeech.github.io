@@ -32,7 +32,7 @@ excerpt_separator: "<!--more-->"
 permalink: /:year/:month/:day/:title:output_ext
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  #- jekyll-sitemap
   - github-metadata
 # A list of the pages to display in the navigation bar
 header_pages:
